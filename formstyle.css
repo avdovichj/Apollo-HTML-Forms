@@ -1,0 +1,137 @@
+/* base style */
+
+body{
+	background: #141414;
+	margin-left: 250px;
+	margin-right: 250px;
+	font-family: tahoma; 
+}
+
+header{
+	padding: 20px;
+	text-align: center;
+}
+
+#logo{
+	width: 150px;
+	height: 150px;
+}
+
+form{
+	margin: 20px;
+	color: white;
+}
+
+form p{
+	font-size: 22px;
+	letter-spacing: 0.2em;
+}
+
+/* radio box */
+
+label[for="male"], label[for="female"], label[for="nonbinary"]{
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+/* checkbox */
+label[for="front"], label[for="back"], label[for="graphic"]{
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* input and fieldset */
+
+fieldset{
+	padding: 20px;
+	margin: 20px 0;
+	border: 3px solid #222;
+}
+
+legend{
+	padding: 10px;
+	font-size: 22px;
+	letter-spacing: 0.2em;
+}
+
+input[type="email"], input[type="telephone"]{
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 10px 10px 50px;
+	border: 0;
+	border-radius: 5px;
+	font-size: 15px;
+	float: left;
+	clear: both;
+	color: white;
+}
+
+input[type="email"]{
+	background: url(https://image.flaticon.com/icons/png/512/8/8807.png) no-repeat;
+	background-position: 7px 9px;
+	background-size: 20px 20px;
+	background-color: #222;
+}
+
+input[type="telephone"]{
+	background: url(https://icon-library.com/images/white-phone-icon-png-transparent/white-phone-icon-png-transparent-7.jpg) no-repeat;
+	background-position: 7px 9px;
+	background-size: 20px 20px;
+	background-color: #222;
+}
+
+/* select options */
+
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+
+	display: block;
+	margin: 30px 0;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid white;
+	background: url(https://www.materialui.co/materialIcons/navigation/arrow_drop_down_white_192x192.png) no-repeat 95% center;
+	background-size: 20px 20px;
+	background-color: #222;
+	width: 250px;
+	font-size: 15px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+input[type="submit"]{
+	background: #b61111;
+	padding: 15px;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 0.1em;
+	border-radius: 5px;
+	border: 0;
+	width: 200px;
+	margin-left: 250px;
+}
+
+/* validation */
+
+input[type="email"]:valid, input[type="telephone"]:valid{
+	border: 2px solid white;
+}
+
+input[type="email"]:valid + .tick, input[type="telephone"]:valid + .tick{
+	background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png) center;
+	background-size: 100%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 10px;
+}

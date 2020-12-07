@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms Example</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="formstyle.css">
+	</head>
+	<body>
+		<header>
+			<img src="https://kreativator.eu/img/thumbs/3383_medium.png" id="logo" alt="Baby Yoda">
+		</header>
+
+		<form>
+			<p>You are a..</p>
+			<input type="radio" id="male" name="gender"/>
+			<label for="male">Male</label>
+			<br>
+			<input type="radio" id="female" name="gender"/>
+			<label for="female">Female</label>
+			<br>
+			<input type="radio" id="nonbinary" name="gender"/>
+			<label for="nonbinary">Non-binary</label>
+			<br>
+			<p>Who is interested in..</p>
+			<input type="checkbox" id="front"/>
+			<label for="front">Front end development</label>
+			<br>
+			<input type="checkbox" id="back"/>
+			<label for="back">Back end development</label>
+			<br>
+			<input type="checkbox" id="graphic"/>
+			<label for="graphic">Graphic design</label>
+			<br><br>
+			<fieldset>
+				<legend>Contact</legend>
+				<input type="email" placeholder="Enter your email" required>
+				<span class="tick"></span>
+				<input type="telephone" placeholder="Enter phone number" required>
+				<span class="tick"></span>
+			</fieldset>
+			<br>
+			<p>How would you like to be contacted?</p>
+			<select>
+				<option>By email</option>
+				<option>By telephone</option>
+			</select>
+			<br>
+			<input type="submit" value="SUBMIT">
+		</form>
+	</body>
+</html>
